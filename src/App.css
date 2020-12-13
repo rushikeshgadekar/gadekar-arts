@@ -6,46 +6,8 @@
 
 .app {
   text-align: center;
+  background-image: linear-gradient(180deg,  #1043b1 0%, #b1b1cf 100%);
+  min-height: 100vh;
 }
 
-.active-current{
-  border-bottom: 2px solid red;
-  
-}
 
-.nav-item::before {
-  position: absolute;
-  bottom: -6px;
-  left: 0;
-  width: 100%;
-  height: 5px;
-  transition: 0.3s;
-  opacity: 0;
-}
-
-.nav-item:not(.is-active):hover::before {
-  opacity: 1;
-  bottom: 0;
-}
-
-.nav-item:not(.is-active):hover {
-  color :red;
-}
-
-.nav-indicator {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  height: 4px;
-  transition: 0.4s;
-  height: 5px;
-  z-index: 1;
-  border-radius: 8px 8px 0 0;
-}
-
- @media (max-width: 580px) {
-	 .nav {
-		 overflow: auto;
-	}
-}
- 
