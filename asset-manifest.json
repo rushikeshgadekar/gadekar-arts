@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/gadekar-arts/static/css/main.d7e90f60.chunk.css",
-    "main.js": "/gadekar-arts/static/js/main.3bdcdcda.chunk.js",
-    "main.js.map": "/gadekar-arts/static/js/main.3bdcdcda.chunk.js.map",
+    "main.js": "/gadekar-arts/static/js/main.a8932e73.chunk.js",
+    "main.js.map": "/gadekar-arts/static/js/main.a8932e73.chunk.js.map",
     "runtime-main.js": "/gadekar-arts/static/js/runtime-main.6017aecc.js",
     "runtime-main.js.map": "/gadekar-arts/static/js/runtime-main.6017aecc.js.map",
     "static/js/2.8881b121.chunk.js": "/gadekar-arts/static/js/2.8881b121.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.6017aecc.js",
     "static/js/2.8881b121.chunk.js",
     "static/css/main.d7e90f60.chunk.css",
-    "static/js/main.3bdcdcda.chunk.js"
+    "static/js/main.a8932e73.chunk.js"
   ]
 }
