@@ -20,7 +20,7 @@ jobs:
     - name: Build page
       run: npm run build
     - name: Deploy to gh-pages
-      uses: rushikeshgadekar/actions-gh-pages@v3
+      uses: rushikeshgadekar/gadekar-arts-gh-pages@v2.0.1
       with:
         deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         publish_dir: ./build
