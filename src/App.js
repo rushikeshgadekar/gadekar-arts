@@ -22,9 +22,9 @@ function App() {
       <BrowserRouter>
         
         { window.screen.width>480? <div className='w-screen  p-7 text-white text-4xl flex space-x-10 justify-center items-center sm:items-stretch container'>
-          <NavLink to="/gadekar-arts/home" className=' px-8 py-4 hover:text-pink-800 rounded-md text-xl font-sans-serif font-medium  text-center nav-item '>HOME </NavLink>
-          <NavLink to="/gadekar-arts/gallery" className='text-gray-100 hover:text-pink-800 px-8 py-4 rounded-md text-xl font-sans-serif font-medium nav-item' >GALLERY</NavLink>
-          <NavLink to="/gadekar-arts/contact" className='text-gray-100 hover:text-pink-800 px-8 py-4 rounded-md text-xl font-sans-serif font-medium nav-item '>CONTACT US</NavLink>        
+          <NavLink to="/home" className=' px-8 py-4 hover:text-pink-800 rounded-md text-xl font-sans-serif font-medium  text-center nav-item '>HOME </NavLink>
+          <NavLink to="/gallery" className='text-gray-100 hover:text-pink-800 px-8 py-4 rounded-md text-xl font-sans-serif font-medium nav-item' >GALLERY</NavLink>
+          <NavLink to="/contact" className='text-gray-100 hover:text-pink-800 px-8 py-4 rounded-md text-xl font-sans-serif font-medium nav-item '>CONTACT US</NavLink>        
           </div>: 
           <select value={input} onChange={select} >
             <option value='home'>HOME</option>
