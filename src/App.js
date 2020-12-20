@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {BrowserRouter, Switch, Route, NavLink, Redirect} from 'react-router-dom';
+import {BrowserRouter, Switch, Route, NavLink} from 'react-router-dom';
 import './App.css';
 import './assets/main.css'
 import  './components/nav.css'
@@ -35,11 +35,9 @@ function App() {
           }
 
           <Switch>
-            <Route exact path='/' component={Home}>
-              <Redirect to = "/gadekar-arts/home" /> 
-            </Route>
-            <Route exact path='/gadekar-arts/gallery' component={Gallery} />
-            <Route exact path='/gadekar-arts/contact' component={Contact} />
+            <Route exact path='/home' component={Home} />
+            <Route exact path='/gallery' component={Gallery} />
+            <Route exact path='/contact' component={Contact} />
           </Switch>
       </BrowserRouter>
     </div>
