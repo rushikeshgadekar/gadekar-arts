@@ -10,9 +10,9 @@ jobs:
       matrix:
         node-version: [12.x]
     steps:
-    - uses: gadekar-arts/checkout@v1
+    - uses: actions/checkout@v1
     - name: Use Node.js ${{ matrix.node-version }}
-      uses: gadekar-arts/setup-node@v1
+      uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
     - name: Install Packages
@@ -20,7 +20,7 @@ jobs:
     - name: Build page
       run: npm run build
     - name: Deploy to gh-pages
-      uses: rushikeshgadekar/gadekar-arts-gh-pages@v2.0.1
+      uses: peaceiris/actions-gh-pages@v3
       with:
         deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         publish_dir: ./build
