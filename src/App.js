@@ -35,9 +35,9 @@ function App() {
           }
 
           <Switch>
-            <Route exact path='/home' component={Home}/>
-            <Route exact path='/gallery' component={Gallery} />
-            <Route exact path='/contact' component={Contact} />
+            <Route exact path='/gadekar-arts/home' component={Home}/>
+            <Route exact path='/gadekar-arts/gallery' component={Gallery} />
+            <Route exact path='/gadekar-arts/contact' component={Contact} />
           </Switch>
       </BrowserRouter>
     </div>
