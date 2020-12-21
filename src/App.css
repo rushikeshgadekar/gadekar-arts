@@ -2,12 +2,18 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* font-family: "Roboto", sans-serif; */
+}
+
+@font-face {
+  font-family: gadekarartsfont;
+  src: url(./components/Winterland\ free\ for\ personal\ use.ttf);
 }
 
 .app {
   text-align: center;
   min-height: 100vh;
-  background-image: url('./assets/images/home.jpg');
+  background-image: url("./assets/images/home.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -21,4 +27,8 @@
   top: 0;
   background: rgba(3, 1, 118, 0.2);
   z-index: 2;
+}
+
+.active {
+  color: green !important;
 }
