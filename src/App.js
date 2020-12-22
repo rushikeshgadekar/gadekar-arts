@@ -15,7 +15,6 @@ function App() {
 
   return (
     <div className="app ">
-      {/* <div className='mask'></div> */}
       <BrowserRouter>
         {window.screen.width > 480 ? (
           <div className="w-screen  p-7 text-white text-4xl flex space-x-10 justify-center items-center sm:items-stretch container">
