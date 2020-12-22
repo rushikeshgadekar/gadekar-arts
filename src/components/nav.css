@@ -1,56 +1,54 @@
-  .body {
-    text-align: center;
-    display: flex;
-    height: 100vh;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px;
-    
-  }
+.body {
+  text-align: center;
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+}
+.container {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+}
+@media (max-width: 480px) {
   .container {
-    position: absolute;
-    top: 0;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Raleway', sans-serif;
-    
-  }
-  @media (max-width: 480px) {
-    .container {
-      display: flex;
-      flex-direction: column;
-      z-index: 3;
-    }
-  }
-  
-  .nav-item {
-    position: relative;
-    color: white;
-    text-decoration: none;
-    margin: 0 6px;
+    flex-direction: column;
     z-index: 3;
-    letter-spacing: 3px;
   }
-  
+}
+
+.nav-item {
+  position: relative;
+  color: white;
+  text-decoration: none;
+  margin: 0 6px;
+  z-index: 3;
+  letter-spacing: 3px;
+}
 
 .nav-item::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: 0;
   left: 0;
   display: block;
   width: 0;
   height: 3px;
-  background-image: linear-gradient(45deg,  hsl(239, 38%, 59%) 20%, hsl(354, 62%, 40%) 100%);
-  transition: width .5s;
-  }
-  
+  background-image: linear-gradient(
+    45deg,
+    hsl(239, 38%, 59%) 20%,
+    hsl(354, 62%, 40%) 100%
+  );
+  transition: width 0.5s;
+}
+
 .nav-item:hover::after {
   width: 100%;
-  transition: width .5s;
+  transition: width 0.5s;
 }
-  
-  
-  
