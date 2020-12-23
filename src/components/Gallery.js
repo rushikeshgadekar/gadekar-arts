@@ -1,21 +1,26 @@
 import React from "react";
 import "./gallery.css";
 
+const images = [
+  { imgname: "1.jpg" },
+  { imgname: "2.jpg" },
+  { imgname: "3.jpg" },
+  { imgname: "4.jpg" },
+  { imgname: "5.jpg" },
+  { imgname: "6.jpg" },
+  { imgname: "7.jpg" },
+];
+
 function Gallery() {
   return (
-    <div className="gallery">
-      <h1 className="heading-gallery">Photo Gallery</h1>
-      <div className="photo-grid">
-        <div className="card card-1"></div>
-        <div className="card card-2"></div>
-        <div className="card card-3"></div>
-        <div className="card card-4"></div>
-        <div className="card card-5"></div>
-        <div className="card card-6"></div>
-        <div className="card card-7"></div>
-        <div className="card card-8"></div>
-        <div className="card card-9"></div>
-        <div className="card card-10"></div>
+    <div className="main">
+      <div className="gallery">
+        <h1 className="heading">Photo Gallery</h1>
+        {images.map((image) => (
+          <div img-card>
+            <img className="image" src={`/pictures/${image.imgname}`} alt="" />
+          </div>
+        ))}
       </div>
     </div>
   );

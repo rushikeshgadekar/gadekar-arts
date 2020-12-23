@@ -6,7 +6,7 @@ function Home() {
   return (
     <div>
       <section>
-        <h1 id="logo">
+        <h1 className="logo">
           <span>G</span>
           <span>A</span>
           <span>D</span>
